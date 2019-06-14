@@ -49,13 +49,13 @@ button {
 	width:130px;
 	padding: 1.5em auto;
 	margin: 1em auto;
-	background-color:#0073b0;
+	background-color:#bcbcbc;
 	border: none;
 	border-radius: 3px;
 	color: #000000;
 	text-transform: none;
 	transition: all 0.2s cubic-bezier(.4,0,.2,1); 
-	
+	font-size: 15px;
 }
 
 .backBtn{
@@ -67,7 +67,6 @@ button {
 #next:active,
 #submit:active,
 .viewanswer:active,
-.viewchart:active,
 .backBtn:active,
 .replay:active  {
   letter-spacing: 0.3em;
@@ -82,17 +81,9 @@ button {
 	
 }
 
-.chartBox{
-	width: 60%;
-	margin:auto;
-}
-
 .resultPage1{
 	
 	text-align: center;
-	
-}
-.resultBox h1{
 	
 }
 
@@ -105,7 +96,6 @@ button {
 	margin: auto;
 	text-align:center;
 }
-.resultPage2,
 .resultPage3
 {
 	display: none;
@@ -191,12 +181,11 @@ button {
   color: #ff383e;
 }
 .resultPage3 h1,
-.resultPage1 h1,
-.resultPage2 h1{
+.resultPage1 h1{
 	text-align: center;
 	padding-bottom: 10px;
     border-bottom: 1.3px solid rgba(21, 63, 101,0.9);
-    color: #00000;
+    color: #000000;
 }
 
 .my-progress {
