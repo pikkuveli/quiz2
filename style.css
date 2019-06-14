@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-
  body{
 
-	background: #7aa4a9;
-	font-family: 'Roboto Slab', serif;
+	background: #fff;
+	font-family: 'Arial', serif;
 	font-size: 18px;
-	color:#f1f2ec;
+	color:#000000;
  }
 
 .quizArea{
@@ -16,7 +14,7 @@
  text-align: center;
  }
 .mc_quiz{
-	color: #3a5336;
+	color: #000000;
 	margin-bottom: 0px;
 }
 
@@ -51,28 +49,13 @@ button {
 	width:130px;
 	padding: 1.5em auto;
 	margin: 1em auto;
-	background-color:#f1f2ec;
+	background-color:#0073b0;
 	border: none;
 	border-radius: 3px;
-	color: #7aa4a9;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
+	color: #000000;
+	text-transform: none;
 	transition: all 0.2s cubic-bezier(.4,0,.2,1); 
 	
-}
-
-#next:hover,
-#submit:hover,
-.viewanswer:hover,
-.viewchart:hover,
-.backBtn:hover,
-.replay:hover {
-  letter-spacing: 0.8em;
-}
-.viewanswer,
-.viewchart,
-.replay{
-	width: 30%;
 }
 
 .backBtn{
@@ -117,7 +100,6 @@ button {
 {
 	text-align:center;
 }
-
 .resultBtns{
 	width: 60%;
 	margin: auto;
@@ -196,6 +178,7 @@ button {
 .h-incorrect{
 	background: #ab4e6b ;
 }
+
 .h-incorrect:after {
   line-height: 1.4;
   position: absolute;
@@ -207,14 +190,13 @@ button {
   font-size: 1.9em;
   color: #ff383e;
 }
-
 .resultPage3 h1,
 .resultPage1 h1,
 .resultPage2 h1{
 	text-align: center;
 	padding-bottom: 10px;
     border-bottom: 1.3px solid rgba(21, 63, 101,0.9);
-    color: #3a5336;
+    color: #00000;
 }
 
 .my-progress {
@@ -233,7 +215,7 @@ progress {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background: #f1f2ec ;
+  background: #0073af ;
   width: 100%;
   height: 2.5px;
   background: none;
@@ -242,7 +224,7 @@ progress {
   will-change: contents;
 }
 progress::-webkit-progress-bar {
-  background-color: #f1f2ec;
+  background-color: #0073af;
 }
 progress::-webkit-progress-value {
   background-color:#153f65;
@@ -258,7 +240,7 @@ progress::-webkit-progress-value {
   width: 5px;
   height: 5px;
   background: #7aa4a9;
-  border: 3px solid #f1f2ec;
+  border: 3px solid #bcbcbc;
   border-radius: 50%;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -307,7 +289,7 @@ progress::-webkit-progress-value {
           animation: bounce .5s forwards;
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
-  border-color: #153f65 ;
+  border-color: #000 ;
  
 }
 
@@ -423,13 +405,13 @@ li {
 	height:30px;
 }
 label{
-	color: #fff;
+	color: #000;
 }
 label:before {
     content: "";
     width: 15px;
     height: 15px;
-    background: #fff ;
+    background: #bcbcbc ;
     position: absolute;
     left: 7px;
 		top: calc(50% - 13px);
@@ -440,12 +422,13 @@ label:before {
 input[type="radio"] {
 	opacity: 0;
 	-webkit-appearance: none;
+	color: #0000;
 	display: inline-block;
 	vertical-align: middle;
 	z-index: 100;
 	margin: 0;
 	padding: 0;
-  width: 100%;
+	width: 100%;
 	height: 30px;
 	position: absolute;
 	left: 0;
@@ -459,7 +442,7 @@ input[type="radio"] {
     height: 25px;
     left: -3px;
     top: 2px;
-    border: 5px solid #fff ;
+    border: 5px solid #000 ;
     opacity: 0;
     border-radius: 50%;
 }
@@ -475,7 +458,7 @@ input[type="radio"]:checked ~ .bullet {
 	position: absolute;
 	width: 10px;
 	height: 2px;
-	background-color: #fff ;
+	background-color: #000 ;
 	opacity:0;
 }
 
