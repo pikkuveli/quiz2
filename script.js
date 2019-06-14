@@ -29,7 +29,7 @@ const quizdata=[
       },
       {
         question:"Mikä laite oli suosituin suomalaisissa kotitalouksissa vuonna 2018?",
-        options:["Tietokone", "Älypuhelin", "Gps-navigaattori", "Kamerakopteri"],
+        options:["tietokone", "älypuhelin", "gps-navigaattori", "kamerakopteri"],
         answer:"Tietokone",
         category:1
       },
