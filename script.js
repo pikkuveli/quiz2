@@ -10,7 +10,7 @@ const quizdata=[
         category:1
       },
       {
-        question:"Mikä on suomalaisen ensiasunnon ostajan keski-ikä?",
+        question:"Mikä oli suomalaisen ensiasunnon ostajan keski-ikä vuonna 2017?",
         options:["20,2 vuotta", "25,0 vuotta", "28,7 vuotta", "30,3 vuotta"],
         answer:"28,7 vuotta",
         category:1
