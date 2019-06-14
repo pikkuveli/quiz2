@@ -4,75 +4,75 @@ var resultList=[];
 
 const quizdata=[
       {
-        question:"Characterized by skill at understanding and profiting by circumstances",
-        options:["Prescient", "Analyst", "Diminution", "Shrewd"],
-        answer:"Shrewd",
+        question:"Kuinka monta asukasta Suomessa oli vuoden 2018 lopussa?",
+        options:["noin 4,5 miljoonaa", "noin 5 miljoonaa", "noin 5,5 miljoonaa", "noin 6 miljoonaa"],
+        answer:"noin 5,5 miljoonaa",
         category:1
       },
       {
-        question:"To refuse to acknowledge as one's own or as connected with oneself",
-        options:["Prevalent", "Disown", "Squalid", "Employee"],
-        answer:"Disown",
-        category:2
-      },
-      {
-        question:"Not having the abilities desired or necessary for any purpose",
-        options:["Incompetent", "Impoverish", "Coxswain", "Devious"],
-        answer:"Incompetent",
-        category:3
-      },
-      {
-        question:"Lizard that changes color in different situations",
-        options:["Scruple", "Depredation", "Chameleon", "Whimsical"],
-        answer:"Chameleon",
+        question:"Mikä on suomalaisen ensiasunnon ostajan keski-ikä?",
+        options:["20,2 vuotta", "25,0 vuotta", "28,7 vuotta", "30,3 vuotta"],
+        answer:"28,7 vuotta",
         category:1
       },
       {
-        question:"Having the title of an office without the obligations",
-        options:["Reciprocal", "Unsullied", "Titular", "Inflated"],
-        answer:"Titular",
-        category:2
-      },
-      {
-        question:"An expression of disapproval or blame personally addressed to one censured",
-        options:["Pitiful", "Reproof", "Mutation", "Raillery"],
-        answer:"Reproof",
-        category:3
-      },
-      {
-        question:"To deliver an elaborate or formal public speech.",
-        options:["Orate", "Magician", "Access", "Guzzle"],
-        answer:"Orate",
-        category:2
-      },
-      {
-        question:"A wharf or artificial landing-place on the shore of a harbor or projecting into it",
-        options:["Intolerable", "Quay", "Fez", "Insatiable"],
-        answer:"Quay",
-        category:3
-      },
-      {
-        question:"Friendly counsel given by way of warning and implying caution or reproof",
-        options:["Credence", "Colloquy", "Abyss", "Monition"],
-        answer:"Monition",
+        question:"Paljonko voita nautittiin Suomessa asukasta kohden vuonna 2017? (ennakkotieto)",
+        options:["0,5 kiloa", "1,5 kiloa", "2,5 kiloa", "3,5 kiloa"],
+        answer:"3,5 kiloa",
         category:1
       },
       {
-        question:"To make a beginning in some occupation or scheme",
-        options:["Muster", "Embark", "Ocular", "Apprehensible"],
-        answer:"Ocular",
-        category:2
+        question:"Mikä oli suomalaisten suosituin matkakohde vuonna 2018?",
+        options:["Espanja", "Viro", "Ruotsi", "Saksa"],
+        answer:"Viro",
+        category:1
       },
       {
-        question:"Able to reinforce sound by sympathetic vibrations",
-        options:["Resonance", "Clandestine", "Diffusion", "Quietus"],
-        answer:"Resonance",
-        category:3
+        question:"Mikä laite oli suosituin suomalaisissa kotitalouksissa vuonna 2018?",
+        options:["Tietokone", "Älypuhelin", "Gps-navigaattori", "Kamerakopteri"],
+        answer:"Tietokone",
+        category:1
       },
       {
-        question:"To send off or consign, as to an obscure position or remote destination",
-        options:["Monolith", "Endurable", "Efficient", "Relegate"],
-        answer:"Relegate",
+        question:"Kuinka monta kertaa suomalainen kävi keskimäärin elokuvateatterissa vuonna 2018?",
+        options:["1 kerran", "1,5 kertaa", "2 kertaa", "3,5 kertaa"],
+        answer:"1,5 kertaa",
+        category:1
+      },
+      {
+        question:"Mikä oli Suomen suosituin auton väri vuonna 2018?",
+        options:["musta", "harmaa", "valkoinen", "keltainen"],
+        answer:"harmaa",
+        category:1
+      },
+      {
+        question:"Mihin maahan Suomesta vietiin eniten tavaroita vuonna 2018?",
+        options:["Ruotsiin", "Yhdysvaltoihin", "Alankomaihin", "Saksaan"],
+        answer:"Saksaan",
+        category:1
+      },
+      {
+        question:"Mikä oli suosituin tytön etunimi vuonna 2018?",
+        options:["Eevi", "Sofia", "Venla", "Ella"],
+        answer:"Eevi",
+        category:1
+      },
+      {
+        question:"Mikä oli asukasmäärältään Suomen suurin kunta vuoden 2018 lopussa?",
+        options:["Tampere", "Helsinki", "Espoo", "Vantaa"],
+        answer:"Helsinki",
+        category:1
+      },
+      {
+        question:"Kuinka monta ylioppilasta valmistui vuonna 2017?",
+        options:["noin 21 000", "noin 26 000", "noin 31 000", "noin 36 000"],
+        answer:"noin 31 000",
+        category:1
+      },
+      {
+        question:"Paljonko suomalainen nainen sai veronalaisia tuloja keskimäärin vuoden 2017 aikana?",
+        options:["noin 20 000 euroa", "noin 25 000 euroa", "noin 30 000 euroa", "noin 35 000 euroa"],
+        answer:"noin 25 000 euroa",
         category:1
       }
     ];
@@ -249,7 +249,7 @@ function totalPieChart(_upto, _cir_progress_id, _correct, _incorrect) {
         _text_percentage.html(_progress + '%');
 
         if (_percentage >= _input_percentage) {
-             _text_percentage.html('<tspan x="50%" dy="0em">'+unchnagedPer + '% </tspan><tspan  x="50%" dy="1.9em">Your Score</tspan>');
+             _text_percentage.html('<tspan x="50%" dy="0em">'+unchnagedPer + '% </tspan><tspan  x="50%" dy="1.9em">Tuloksesi</tspan>');
             clearInterval(_sleep);
         } else {
 
@@ -268,45 +268,6 @@ function renderBriefChart(correct, total, incorrect){
 
  totalPieChart(percent, '_cir_progress', correct, incorrect)
    
-}
-/*** render chart for result **/
-function renderChart(data){
-  var ctx = document.getElementById("myChart");
-  var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-    labels: [ "Verbal communication", 
-              "Non-verbal communication", 
-              "Written communication", 
-              "Incorrect"
-            ],
-    datasets: [
-                {
-                 
-                  data: data,
-                  backgroundColor: [  '#e6ded4',
-                                      '#968089',
-                                      '#e3c3d4',
-                                      '#ab4e6b'
-                                    ],
-                  borderColor: [  'rgba(239, 239, 81, 1)',
-                                  '#8e3407',
-                                  'rgba((239, 239, 81, 1)',
-                                  '#000000'
-                                ],
-                  borderWidth: 1
-                }
-              ]
-    },
-    options: {
-         pieceLabel: {
-          render: 'percentage',
-          fontColor: 'black',
-          precision: 2
-        }
-      }
-    
-  });
 }
 
 /** List question and your answer and correct answer  
