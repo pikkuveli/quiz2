@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>First page</title>
+    <title>Tunnetko Suomen luvut?</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,11 +13,11 @@
         <div class="quizArea">
                 <div class="multipleChoiceQues">
                 <h1 class="mc_quiz">
-                  Quiz
+                  Tunnetko Suomen luvut?
                 </h1>
                   <div class="my-progress">
                       <progress class="my-progress-bar" min="0" max="100" value="0" step="9" aria-labelledby="my-progress-completion"></progress>    
-                      <p id="my-progress-completion" class="js-my-progress-completion sr-only" aria-live="polite">0% complete</p>
+                      <p id="my-progress-completion" class="js-my-progress-completion sr-only" aria-live="polite">0% valmiina</p>
                   </div>
                   <div class="quizBox">
                     <div class="question"> </div>
@@ -37,11 +37,11 @@
                       <svg height="300" width="300" id="_cir_progress">
                         <g>
                           <rect x="0" y="1" width="30" height="15"  fill="#ab4e6b" />
-                          <text x="32" y="14" font-size="14"  class="_text_incor">Väärin: 12 </text>
+                          <text x="32" y="14" font-size="14"  class="_text_incor">Väärin : 12 </text>
                         </g>
                         <g>
                           <rect x="160" y="1" width="30" height="15"  fill="#968089" />
-                          <text x="192" y="14" font-size="14" class="_text_cor">Oikein: 12</text>
+                          <text x="192" y="14" font-size="14" class="_text_cor">Oikein : 12</text>
                        </g>          
                         <circle class="_cir_P_x" cx="150" cy="150" r="120" stroke="#ab4e6b" stroke-width="20" fill="none" onmouseover="evt.target.setAttribute('stroke', 'rgba(171, 78, 107,0.7)');" onmouseout="evt.target.setAttribute('stroke','#ab4e6b');"></circle>
               
@@ -49,11 +49,24 @@
                         <text x="50%" y="50%" text-anchor="middle" stroke="none" stroke-width="1px" dy=".3em" class="_cir_Per">0%</text>
                         </svg>
                     </div>
-              
+					<div> <p>Jaa tuloksesi somessa!</p></div>
+				<!-- AddToAny BEGIN -->
+				<center><div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+				<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+				<a class="a2a_button_facebook"></a>
+				<a class="a2a_button_twitter"></a>
+				<a class="a2a_button_whatsapp"></a>
+				<a class="a2a_button_email"></a>
+				</div></center>
+				<script>
+				var a2a_config = a2a_config || {};
+				a2a_config.locale = "fi";
+				</script>
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+				<!-- AddToAny END -->
                     <div class="resultBtns">
-                      <button class="viewanswer">Näytä vastauksesi</button>
-                      <button class="viewchart">Näytä kaavio</button>
-                      <button class="replay"><i class="fa fa-repeat" style="font-size:1em;"></i> <br/>Kokeile uudelleen</button>
+                      <button class="viewanswer">Näytä vastaukset</button>
+                      <button class="replay"><i class="fa fa-repeat"></i> Kokeile uudelleen</button>
                     </div>
                   </div>
               
