@@ -34,29 +34,10 @@
         <div class="resultBox">
           <h1>Tuloksien yhteenveto</h1>
 
-          <p>Sait oikein</p>
-        </div>
-        <div class="briefchart">
-          <svg height="300" width="300" id="_cir_progress">
-            <g>
-              <rect x="0" y="1" width="30" height="15" fill="#ab4e6b" />
-              <text x="32" y="14" font-size="14" class="_text_incor">Väärin : 12 </text>
-            </g>
-            <g>
-              <rect x="160" y="1" width="30" height="15" fill="#968089" />
-              <text x="192" y="14" font-size="14" class="_text_cor">Oikein : 12</text>
-            </g>
-            <circle class="_cir_P_x" cx="150" cy="150" r="120" stroke="#ab4e6b" stroke-width="20" fill="none"
-              onmouseover="evt.target.setAttribute('stroke', 'rgba(171, 78, 107,0.7)');"
-              onmouseout="evt.target.setAttribute('stroke','#ab4e6b');"></circle>
+          <h2>Sait oikein</h2>
 
-            <circle class="_cir_P_y" cx="150" cy="150" r="120" stroke="#968089" stroke-width="20"
-              stroke-dasharray="0,1000" fill="none"
-              onmouseover="evt.target.setAttribute('stroke', 'rgba(150, 128, 137,0.7)');"
-              onmouseout="evt.target.setAttribute('stroke','#968089');"></circle>
-            <text x="50%" y="50%" text-anchor="middle" stroke="none" stroke-width="1px" dy=".3em"
-              class="_cir_Per">0%</text>
-          </svg>
+          <h2 id="_results_area"><span class="_correct_number"></span> / <span class="_total_number"></span></h2>
+
         </div>
         <div>
           <p>Jaa tuloksesi somessa!</p>
@@ -96,7 +77,7 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
-  <script src="script.js"></script>
+  <script src="script2.js"></script>
 </body>
 
 </html>
