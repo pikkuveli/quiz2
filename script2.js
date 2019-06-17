@@ -10,9 +10,9 @@ const quizdata = [
     category: 1
   },
   {
-    question: "Mikä oli suomalaisen ensiasunnon ostajan keski-ikä vuonna 2017?",
-    options: ["20,2 vuotta", "25,0 vuotta", "28,7 vuotta", "30,3 vuotta"],
-    answer: "28,7 vuotta",
+    question: "Kuinka monta ylioppilasta valmistui vuonna 2017?",
+    options: ["noin 21 000", "noin 26 000", "noin 31 000", "noin 36 000"],
+    answer: "noin 31 000",
     category: 1
   },
   {
@@ -61,18 +61,6 @@ const quizdata = [
     question: "Mikä oli asukasmäärältään Suomen suurin kunta vuoden 2018 lopussa?",
     options: ["Tampere", "Helsinki", "Espoo", "Vantaa"],
     answer: "Helsinki",
-    category: 1
-  },
-  {
-    question: "Kuinka monta ylioppilasta valmistui vuonna 2017?",
-    options: ["noin 21 000", "noin 26 000", "noin 31 000", "noin 36 000"],
-    answer: "noin 31 000",
-    category: 1
-  },
-  {
-    question: "Paljonko suomalainen nainen sai veronalaisia tuloja keskimäärin vuoden 2017 aikana?",
-    options: ["noin 20 000 euroa", "noin 25 000 euroa", "noin 30 000 euroa", "noin 35 000 euroa"],
-    answer: "noin 25 000 euroa",
     category: 1
   }
 ];
