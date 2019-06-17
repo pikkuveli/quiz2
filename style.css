@@ -237,36 +237,30 @@ progress::-webkit-progress-value {
   left: 0;
 }
 .my-progress-indicator.progress_2 {
-  left: 9%;
+  left: 11%;
 }
 .my-progress-indicator.progress_3 {
-  left: 18%;
+  left: 22%;
 }
 .my-progress-indicator.progress_4{
-  left: 27%;
+  left: 33%;
 }
 .my-progress-indicator.progress_5 {
-  left: 36%;
+  left: 44%;
 }
 .my-progress-indicator.progress_6 {
-  left: 45%;
+  left: 56%;
 }
 .my-progress-indicator.progress_7 {
-  left: 54%;
+  left: 67%;
 }
 .my-progress-indicator.progress_8 {
-  left: 63%;
+  left: 78%;
 }
 .my-progress-indicator.progress_9 {
-  left: 72%;
+  left: 89%;
 }
 .my-progress-indicator.progress_10 {
-  left: 81%;
-}
-.my-progress-indicator.progress_11 {
-  left: 90%;
-}
-.my-progress-indicator.progress_12 {
   left: 100%;
 }
 .my-progress-indicator.active {
