@@ -52,7 +52,7 @@ const quizdata = [
     category: 1
   },
   {
-    question: "Mikä oli suosituin tytön etunimi vuonna 2018?",
+    question: "Mikä oli vuonna 2018 syntyneiden tyttöjen suosituin etunimi?",
     options: ["Eevi", "Sofia", "Venla", "Ella"],
     answer: "Eevi",
     category: 1
