@@ -220,20 +220,29 @@ function renderResult(resultList) {
     $("._result_photo1").show();
     $("._result_photo2").hide();
     $("._result_photo3").hide();
-    $("#_result_h2").find("._result_title").html("aloittelija");
-    $("#_results_area").find("._result_text").html("sinulla on vielä reilusti parantamisen varaa");
+    $("#_result_h2").find("._result_title").html("Tilastot ovat sinulle kummajaisia!");
+    $("#_results_area").find("._result_text").html("Nyt ei mennyt ihan nappiin, mutta ei hätää. Voit tutustua Suomi lukuina -taskutilastoon ja yrittää uudelleen.");
+	$("#_share_buttons1").show();
+	$("#_share_buttons2").hide();
+	$("#_share_buttons3").hide();
   } else if (countCorrect >= 4 && countCorrect <= 7) {
     $("._result_photo1").hide();
     $("._result_photo2").show();
     $("._result_photo3").hide();
-    $("#_result_h2").find("._result_title").html("melkein mestari");
-    $("#_results_area").find("._result_text").html("olet jo lähellä tilastotieteilijöiden huipputasoa");
+    $("#_result_h2").find("._result_title").html("Olet melkein mestari!");
+    $("#_results_area").find("._result_text").html("Olet jo lähellä tilastotietäjien huipputasoa.");
+	$("#_share_buttons1").hide();
+	$("#_share_buttons2").show();
+	$("#_share_buttons3").hide();
   } else{
     $("._result_photo1").hide();
     $("._result_photo2").hide();
     $("._result_photo3").show();
-    $("#_result_h2").find("._result_title").html("tilastotietäjä");
-    $("#_results_area").find("._result_text").html("tiedät kaiken tarvittavan tämän päivän tilastotieteestä");
+    $("#_result_h2").find("._result_title").html("Olet tilastovelho!");
+    $("#_results_area").find("._result_text").html("Onnittelut hienosta tuloksesta! Tiedät kaiken oleellisen Suomen luvuista.");
+	$("#_share_buttons1").hide();
+	$("#_share_buttons2").hide();
+	$("#_share_buttons3").show();
   }
 
   $("#_results_area").find("._correct_number").html(countCorrect);
