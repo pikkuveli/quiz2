@@ -221,7 +221,7 @@ function renderResult(resultList) {
     $("._result_photo2").hide();
     $("._result_photo3").hide();
     $("#_result_h2").find("._result_title").html("Tilastot ovat sinulle kummajaisia!");
-    $("#_results_area").find("._result_text").html("Nyt ei mennyt ihan nappiin, mutta ei hätää. Voit tutustua <a href="http://www.stat.fi/tup/julkaisut/tiedostot/julkaisuluettelo/yyti_sul_201900_2019_21459_net.pdf" target="_blank">Suomi lukuina -taskutilastoon</a> ja yrittää uudelleen.");
+    $("#_results_area").find("._result_text").html("Nyt ei mennyt ihan nappiin, mutta ei hätää. Voit tutustua Suomi lukuina -taskutilastoon ja yrittää uudelleen.");
 	$("#_share_buttons1").show();
 	$("#_share_buttons2").hide();
 	$("#_share_buttons3").hide();
