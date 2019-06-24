@@ -230,7 +230,7 @@ function renderResult(resultList) {
     $("._result_photo2").show();
     $("._result_photo3").hide();
     $("#_result_h2").find("._result_title").html("Olet melkein mestari!");
-    $("#_results_area").find("._result_text").html("Olet jo lähellä tilastotieteilijöiden huipputasoa.");
+    $("#_results_area").find("._result_text").html("Olet jo lähellä tilastotietäjien huipputasoa.");
 	$("#_share_buttons1").hide();
 	$("#_share_buttons2").show();
 	$("#_share_buttons3").hide();
