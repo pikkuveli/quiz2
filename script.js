@@ -216,6 +216,26 @@ function renderResult(resultList) {
   var results = resultList;
   var countCorrect = countAnswers(results)[0];
 
+  if(countCorrect>=0 && countCorrect<=3){
+    $("._result_photo1").show();
+    $("._result_photo2").hide();
+    $("._result_photo3").hide();
+    $("#_result_h2").find("._result_title").html("aloittelija");
+    $("#_results_area").find("._result_text").html("sinulla on vielä reilusti parantamisen varaa");
+  } else if (countCorrect >= 4 && countCorrect <= 7) {
+    $("._result_photo1").hide();
+    $("._result_photo2").show();
+    $("._result_photo3").hide();
+    $("#_result_h2").find("._result_title").html("melkein mestari");
+    $("#_results_area").find("._result_text").html("olet jo lähellä tilastotieteilijöiden huipputasoa");
+  } else{
+    $("._result_photo1").hide();
+    $("._result_photo2").hide();
+    $("._result_photo3").show();
+    $("#_result_h2").find("._result_title").html("tilastotietäjä");
+    $("#_results_area").find("._result_text").html("tiedät kaiken tarvittavan tämän päivän tilastotieteestä");
+  }
+
   $("#_results_area").find("._correct_number").html(countCorrect);
   $("#_results_area").find("._total_number").html(resultList.length);
 }
