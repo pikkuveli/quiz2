@@ -44,10 +44,9 @@
           <img class="_result_photo2" src="mallikuva2.png" alt="Toinen mallikuva" style="max-width:100%;height:auto;">
           <img class="_result_photo3" src="mallikuva3.png" alt="Kolmas mallikuva" style="max-width:100%;height:auto;">
 
-          <h2 id="_result_h2">Olet <span class="_result_title"></span></h2>
+          <h2 id="_result_h2"><span class="_result_title"></span></h2>
 
-          <p id="_results_area">Sait oikein <span class="_correct_number"></span> / <span class="_total_number"></span>.
-            Tämä tarkoittaa siis sitä, että <span class="_result_text"></span>.
+          <p id="_results_area">Sait oikein <span class="_correct_number"></span> / <span class="_total_number"></span>. <span class="_result_text"></span>
           </p>
 
         </div>
@@ -56,11 +55,11 @@
         </div>
 		<div id="_share_buttons1" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://tilastokeskus.fi/ajk/ajankohtaispalvelut/tunnetko-suomen-luvut-testaa-tietosi-leikkimielisessa-visassa.html" data-a2a-title="Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa"
 		style="margin-left: auto;margin-right: auto;width: 180px;">
-		<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 		<a class="a2a_button_facebook"></a>
 		<a class="a2a_button_twitter"></a>
 		<a class="a2a_button_whatsapp"></a>
 		<a class="a2a_button_email"></a>
+		<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 		</div>
 		<script>
 		var a2a_config = a2a_config || {};
@@ -73,7 +72,7 @@
 		};
 
 		a2a_config.templates.twitter = {
-			text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${title} ${link}",
+			text: "Olen Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${title} ${link}",
 			hashtags: "sharing,social",
 			related: "Tilastokeskus"
 		};
@@ -85,29 +84,60 @@
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<div id="_share_buttons2" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://tilastokeskus.fi/ajk/ajankohtaispalvelut/tunnetko-suomen-luvut-testaa-tietosi-leikkimielisessa-visassa.html" data-a2a-title="Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa"
 		style="margin-left: auto;margin-right: auto;width: 180px;">
-		<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 		<a class="a2a_button_facebook"></a>
 		<a class="a2a_button_twitter"></a>
 		<a class="a2a_button_whatsapp"></a>
 		<a class="a2a_button_email"></a>
+		<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 		</div>
 		<script>
 		var a2a_config = a2a_config || {};
+		a2a_config.templates = a2a_config.templates || {};
+		a2a_config.icon_color = "#0073b0";
 		a2a_config.locale = "fi";
+		a2a_config.templates.email = {
+			subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
+			body: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa:\n${link}"
+		};
+
+		a2a_config.templates.twitter = {
+			text: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
+			hashtags: "tilastokeskus,tietovisa",
+			related: "Tilastokeskus"
+		};
+
+		a2a_config.templates.whatsapp = {
+			text: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
+		};
 		</script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<div id="_share_buttons3" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://tilastokeskus.fi/ajk/ajankohtaispalvelut/tunnetko-suomen-luvut-testaa-tietosi-leikkimielisessa-visassa.html" data-a2a-title="Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa"
 		style="margin-left: auto;margin-right: auto;width: 180px;">
-		<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 		<a class="a2a_button_facebook"></a>
 		<a class="a2a_button_twitter"></a>
 		<a class="a2a_button_whatsapp"></a>
 		<a class="a2a_button_email"></a>
+		<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 		</div>
 		<script>
 		var a2a_config = a2a_config || {};
+		a2a_config.templates = a2a_config.templates || {};
 		a2a_config.icon_color = "#0073b0";
 		a2a_config.locale = "fi";
+		a2a_config.templates.email = {
+			subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
+			body: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa:\n${link}"
+		};
+
+		a2a_config.templates.twitter = {
+			text: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
+			hashtags: "tilastokeskus,tietovisa",
+			related: "Tilastokeskus"
+		};
+
+		a2a_config.templates.whatsapp = {
+			text: "Olen tilastotieteilijä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
+		};
 		</script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
         <div class="resultBtns">
