@@ -1,5 +1,6 @@
 var $progressValue = 0;
 var resultList = [];
+var a2a_config = a2a_config || {};
 
 
 const quizdata = [
@@ -216,33 +217,36 @@ function renderResult(resultList) {
   var results = resultList;
   var countCorrect = countAnswers(results)[0];
 
-  if(countCorrect>=0 && countCorrect<=3){
+  if (countCorrect >= 0 && countCorrect <= 3) {
     $("._result_photo1").show();
     $("._result_photo2").hide();
     $("._result_photo3").hide();
     $("#_result_h2").find("._result_title").html("Tilastot ovat sinulle kummajaisia!");
-    $("#_results_area").find("._result_text").html("Nyt ei mennyt ihan nappiin, mutta ei hätää. Voit tutustua Suomi lukuina -taskutilastoon ja yrittää uudelleen.");
-	$("#_share_buttons1").show();
-	$("#_share_buttons2").hide();
-	$("#_share_buttons3").hide();
+    $("#_results_area").find("._result_text").html("Nyt ei mennyt ihan nappiin, mutta ei hätää. Voit tutustua " + '<a href="http://www.stat.fi/tup/julkaisut/tiedostot/julkaisuluettelo/yyti_sul_201900_2019_21459_net.pdf" target="_blank">Suomi lukuina -taskutilastoon</a>' + " ja yrittää uudelleen.");
+    $("#_share_buttons1").show();
+    $("#_share_buttons2").hide();
+    $("#_share_buttons3").hide();
+    addToAnyConfiguration(1);
   } else if (countCorrect >= 4 && countCorrect <= 7) {
     $("._result_photo1").hide();
     $("._result_photo2").show();
     $("._result_photo3").hide();
     $("#_result_h2").find("._result_title").html("Olet melkein mestari!");
     $("#_results_area").find("._result_text").html("Olet jo lähellä tilastotietäjien huipputasoa.");
-	$("#_share_buttons1").hide();
-	$("#_share_buttons2").show();
-	$("#_share_buttons3").hide();
-  } else{
+    $("#_share_buttons1").hide();
+    $("#_share_buttons2").show();
+    $("#_share_buttons3").hide();
+    addToAnyConfiguration(2);
+  } else {
     $("._result_photo1").hide();
     $("._result_photo2").hide();
     $("._result_photo3").show();
     $("#_result_h2").find("._result_title").html("Olet tilastovelho!");
     $("#_results_area").find("._result_text").html("Onnittelut hienosta tuloksesta! Tiedät kaiken oleellisen Suomen luvuista.");
-	$("#_share_buttons1").hide();
-	$("#_share_buttons2").hide();
-	$("#_share_buttons3").show();
+    $("#_share_buttons1").hide();
+    $("#_share_buttons2").hide();
+    $("#_share_buttons3").show();
+    addToAnyConfiguration(3);
   }
 
   $("#_results_area").find("._correct_number").html(countCorrect);
@@ -288,6 +292,60 @@ function addClickedAnswerToResult(questions, presentIndex, clicked) {
 
   console.log("result");
   console.log(result);
+}
+
+function addToAnyConfiguration(selectedChoice) {
+  a2a_config.templates = a2a_config.templates || {};
+  a2a_config.icon_color = "#0073b0";
+  a2a_config.locale = "fi";
+
+  if (selectedChoice == 1) {
+    a2a_config.templates.email = {
+      subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
+      body: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin:\n${link}"
+    };
+
+    a2a_config.templates.twitter = {
+      text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${title} ${link}",
+      hashtags: "tilastokeskus,tietovisa",
+      related: "Tilastokeskus"
+    };
+
+    a2a_config.templates.whatsapp = {
+      text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${link}"
+    };
+  } else if (selectedChoice == 2) {
+    a2a_config.templates.email = {
+      subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
+      body: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa:\n${link}"
+    };
+
+    a2a_config.templates.twitter = {
+      text: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
+      hashtags: "tilastokeskus,tietovisa",
+      related: "Tilastokeskus"
+    };
+
+    a2a_config.templates.whatsapp = {
+      text: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
+    };
+  }
+  else { // selectedChoice == 3
+    a2a_config.templates.email = {
+      subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
+      body: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa:\n${link}"
+    };
+
+    a2a_config.templates.twitter = {
+      text: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
+      hashtags: "tilastokeskus,tietovisa",
+      related: "Tilastokeskus"
+    };
+
+    a2a_config.templates.whatsapp = {
+      text: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
+    };
+  }
 }
 
 $(document).ready(function () {
