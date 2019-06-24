@@ -64,8 +64,23 @@
 		</div>
 		<script>
 		var a2a_config = a2a_config || {};
+		a2a_config.templates = a2a_config.templates || {};
 		a2a_config.icon_color = "#0073b0";
 		a2a_config.locale = "fi";
+		a2a_config.templates.email = {
+			subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
+			body: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin:\n${link}"
+		};
+
+		a2a_config.templates.twitter = {
+			text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${title} ${link}",
+			hashtags: "sharing,social",
+			related: "Tilastokeskus"
+		};
+
+		a2a_config.templates.whatsapp = {
+			text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${link}"
+		};
 		</script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<div id="_share_buttons2" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://tilastokeskus.fi/ajk/ajankohtaispalvelut/tunnetko-suomen-luvut-testaa-tietosi-leikkimielisessa-visassa.html" data-a2a-title="Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa"
