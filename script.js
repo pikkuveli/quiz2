@@ -306,7 +306,7 @@ function addToAnyConfiguration(selectedChoice) {
     };
 
     a2a_config.templates.twitter = {
-      text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${title} ${link}",
+      text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${link}",
       hashtags: "tilastokeskus,tietovisa",
       related: "Tilastokeskus"
     };
@@ -333,17 +333,17 @@ function addToAnyConfiguration(selectedChoice) {
   else { // selectedChoice == 3
     a2a_config.templates.email = {
       subject: "Tunnetko Suomen luvut? – Testaa tietosi leikkimielisessä visassa",
-      body: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa:\n${link}"
+      body: "Olen tilastovelho Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa:\n${link}"
     };
 
     a2a_config.templates.twitter = {
-      text: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
+      text: "Olen tilastovelho Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
       hashtags: "tilastokeskus,tietovisa",
       related: "Tilastokeskus"
     };
 
     a2a_config.templates.whatsapp = {
-      text: "Olen tilastotietäjä Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
+      text: "Olen tilastotvelho Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
     };
   }
 }
