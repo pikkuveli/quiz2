@@ -343,7 +343,7 @@ function addToAnyConfiguration(selectedChoice) {
     };
 
     a2a_config.templates.whatsapp = {
-      text: "Olen tilastotvelho Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
+      text: "Olen tilastovelho Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}"
     };
   }
 }
