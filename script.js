@@ -324,7 +324,7 @@ function addToAnyConfiguration(selectedChoice) {
     a2a_config.templates.twitter = {
       text: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
       via: "Tilastokeskus",
-      hashtags: "tiedostatulevoaisuus,tietovisa",
+      hashtags: "tiedostatulevaisuus,tietovisa",
       related: "Tilastokeskus"
     };
 
