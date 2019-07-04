@@ -307,7 +307,8 @@ function addToAnyConfiguration(selectedChoice) {
 
     a2a_config.templates.twitter = {
       text: "Kokeilin Tilastokeskuksen leikkimielistä visaa. Kokeile sinäkin: ${link}",
-      hashtags: "tilastokeskus,tietovisa",
+      via: "Tilastokeskus",
+      hashtags: "tiedostatulevaisuus,tietovisa",
       related: "Tilastokeskus"
     };
 
@@ -322,7 +323,8 @@ function addToAnyConfiguration(selectedChoice) {
 
     a2a_config.templates.twitter = {
       text: "Olen melkein mestari Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
-      hashtags: "tilastokeskus,tietovisa",
+      via: "Tilastokeskus",
+      hashtags: "tiedostatulevoaisuus,tietovisa",
       related: "Tilastokeskus"
     };
 
@@ -338,7 +340,8 @@ function addToAnyConfiguration(selectedChoice) {
 
     a2a_config.templates.twitter = {
       text: "Olen tilastovelho Tilastokeskuksen leikkimielisessä visassa. Kokeile sinäkin visaa: ${link}",
-      hashtags: "tilastokeskus,tietovisa",
+      via: "Tilastokeskus",
+      hashtags: "tiedostatulevaisuus,tietovisa",
       related: "Tilastokeskus"
     };
 
